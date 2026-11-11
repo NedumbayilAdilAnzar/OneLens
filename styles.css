@@ -52,15 +52,17 @@ form label {
 }
 
 input {
-  width: 260px;
+  width: 300px;
   max-width: 100%;
-  padding: 10px;
+  padding: 14px;
+  font-size: 16px;
   border: none;
   border-radius: 6px;
 }
 
 button {
-  padding: 10px 16px;
+  padding: 14px 20px;
+  font-size: 16px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -78,20 +80,6 @@ button {
 
 button:hover {
   opacity: 0.85;
-}
-
-/* quick pick chips */
-.chips {
-  margin-top: 14px;
-}
-
-.chips button {
-  margin: 0 3px;
-  padding: 6px 14px;
-  background: transparent;
-  color: white;
-  border: 1px solid #7fc4cb;
-  border-radius: 20px;
 }
 
 main {
@@ -124,4 +112,25 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 16px;
+}
+
+/* result cards */
+.card {
+  background: white;
+  border: 1px solid #cfe5e7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card p {
+  margin: 0;
+  padding: 10px;
+  font-size: 14px;
 }
