@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OneLens</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="top">
+      <div class="brand">
+        <h1>OneLens</h1>
+        <p class="tagline">Find clear, bright images on any topic.</p>
+      </div>
+
+      <form id="search-form">
+        <label for="search-input">Search images</label>
+        <div class="search-row">
+          <input id="search-input" type="search" placeholder="Try coral reef" />
+          <button id="search-btn" type="submit">Search</button>
+          <button id="clear-btn" type="reset">Clear</button>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <p id="result-count">Showing 0 results</p>
+    <section id="results"></section>
+    <p id="empty-message">Search for a topic to see results here.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
